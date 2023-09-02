@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MARKS</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+       
+    </head>
+    <body>
+        <div class="form">
+            <h2>STUDENT MARKS</h2>
+              <!--Roll no div-->
+                <div class="input">
+                    <label for="name">Roll No</label>
+                    <input type="text" name="rollno" id="rollno" class="clear-input">
+                </div>
+                <!--name div-->
+                <div class="input">
+                    <label for="userName">Name</label>
+                    <input type="text" name="userName" id="userName" class="clear-input">
+                </div>
+                  <!--Gender-->
+                <div class="radio">
+                    <h4>Gender</h4>
+                    <input type="radio" name="gender" id="male" value="male" > 
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female" >
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" id="others" value="others" >
+                    <label for="others">Others</label></div>
+                 <!--DOB-->
+                 <div class="dob">
+                    <label for="date">DOB</label>
+                        <input type="date" id="date" class="clear-input">
+                   <label for="age">age</label> <input type="text" id="displayAge" class="clear-input">
+                       
+                 </div>
+                 <!--Department-->
+                 <div class="radio">
+                    <h4>Department</h4>
+                    <input type="radio" id="mech" name="dept" value="Mechanical" >
+                    <label for="mech" name="dept">Mechanical</label>
+                    <input type="radio" id="pt" name="dept" value="Production" >
+                    <label for="pt" name="dept">Production</label>
+                    <input type="radio" id="it" name="dept" value="Information Technology" >
+                    <label for="it" name="dept">IT</label>
+                 </div>
+                   <!--Language-->
+                   <h4>Languages Known</h4>
+                   <div >
+                    
+                    <input type="checkbox" id="tamil" value="Tamil" name="language" class="checkbox"><label for="tamil">Tamil</label>
+                    <input type="checkbox" id="english" value="English" name="language" class="checkbox"><label for="english">English</label>
+                    <input type="checkbox" id="hindi" value="Hindi" name="language" class="checkbox"><label for="hindi">Hindi</label>
+                   </div>
+                   <!--Location-->
+                   <div class="location">
+                    <h4>State</h4>
+                    <select name="state" id="location" class="clear-input">
+                        <option value="Tamilnadu" >Tamilnadu</option>
+                        <option value="AndhraPradesh" >AndhraPradesh</option>
+                        <option value="Kerala" >Kerala</option>
+                        <option value="Pondicherry" >Pondicherry</option>
+                    </select>
+                   </div>
+                    
+                    
+               
+                <div class="button">
+                    <button type="button" id="submit" >submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+        </div>
+
+        <!--first table for data-->
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Roll no</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Department</th>
+                    <th>Languages Known</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+        <!--second table for marks-->
+        <table border="1px">
+            <thead>
+                <tr><th>RollNo</th>
+                <th>Name</th>
+                <th>Department</th>
+                 <th>Maths</th>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                    <th>Total</th>
+                    <th>Average</th>
+                    <th>Action</th>
+            </tr></thead>
+            <tbody id="mark_table">
+
+            </tbody>
+           
+        </table>
+        <button id='add_student'>Add Student</button>
+
+        <script src="script.js"></script>
+        <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script>
+    </body>
+   
+</html>
